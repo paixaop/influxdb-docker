@@ -1,4 +1,4 @@
-# influxdb 
+# influxdb 0.7.3
 
 FROM debian:jessie
 
