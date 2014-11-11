@@ -1,4 +1,4 @@
-# influxdb 0.8.2
+# influxdb 0.8.5
 
 FROM debian:jessie
 
