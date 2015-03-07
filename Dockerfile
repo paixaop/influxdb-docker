@@ -1,4 +1,6 @@
-# influxdb 0.8.5
+# influxdb 0.9
+
+MAINTAINER Pedro Paixao
 
 FROM debian:jessie
 
@@ -12,5 +14,6 @@ RUN mkdir -p /opt/influxdb/shared/data && \
 USER daemon
 EXPOSE 8083 8086
 
-ENTRYPOINT ["/usr/bin/influxdb"]
+ENTRYPOINT ["/opt/influxdb/init.sh", "start"]
 CMD ["-config=/opt/influxdb/shared/config.toml"]
+
