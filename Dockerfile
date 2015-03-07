@@ -1,7 +1,5 @@
 # influxdb 0.9
 
-MAINTAINER Pedro Paixao
-
 FROM debian:jessie
 
 #ADD http://s3.amazonaws.com/influxdb/influxdb_latest_amd64.deb /influxdb_latest_amd64.deb
@@ -17,3 +15,4 @@ EXPOSE 8083 8086
 ENTRYPOINT ["/opt/influxdb/init.sh", "start"]
 CMD ["-config=/opt/influxdb/shared/config.toml"]
 
+MAINTAINER Pedro Paixao
